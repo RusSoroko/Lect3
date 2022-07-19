@@ -1,6 +1,5 @@
-Console.WriteLine("Dev1 feature");
-Console.WriteLine("Dev2 feature");
-Console.WriteLine("BasicFunc");
-
+byte number1 = byte.Parse(Console.ReadLine());
+byte number2 = byte.Parse(Console.ReadLine());
+byte number3 = (byte)(number2 * number1);
 
 Console.WriteLine("Имя: {0}  Возраст: {2}  Рост: {1}м", name, height, age);
