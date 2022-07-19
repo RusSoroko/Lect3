@@ -2,4 +2,16 @@ byte number1 = byte.Parse(Console.ReadLine());
 byte number2 = byte.Parse(Console.ReadLine());
 byte number3 = (byte)(number2 * number1);
 
+try
+{
+    int a = 33;
+    int b = 600;
+    byte c = checked((byte)(a + b));
+    Console.WriteLine(c);
+}
+catch (OverflowException ex)
+{
+    Console.WriteLine(ex.Message);
+}
+
 Console.WriteLine("Имя: {0}  Возраст: {2}  Рост: {1}м", name, height, age);
